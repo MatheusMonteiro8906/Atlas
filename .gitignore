@@ -1,0 +1,6 @@
+/.cache-Zero
+/.env
+/.venv
+/realtimesst.log
+/run_startup.bat
+/__pycache__
