@@ -18,7 +18,7 @@ def search(query):
 
 def parse_command(command):
     if "weather" in command:
-        weather_description = asyncio.run(get_weather("Chicago"))
+        weather_description = asyncio.run(get_weather("Araraquara"))
         query = "System information: " + str(weather_description)
         print(query)
         response = assist.ask_question_memory(query)
@@ -48,8 +48,5 @@ def parse_command(command):
         print(query)
         response = assist.ask_question_memory(query)
         done = assist.TTS(response)
-        
-
-    
 
         
